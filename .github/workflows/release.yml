@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Update NPM
+      - name: Install PNPM
         run: npm install --global pnpm
 
       - name: Install dependencies
