@@ -16,9 +16,9 @@ function showVersion() {
 
 function showHelpInformation() {
   console.log(
-    `Usage: cleanup-node-modules [options] [path...]
+    `Usage: clearout-node-modules [options] [path...]
 
-Clean up 'node_modules' directory.
+Find and delete node_modules folders (recursively) in your directory.
 
   -h, --help        Display this help
   -r, --recursive   Include all nested node_modules directories
