@@ -7,7 +7,7 @@ Find and delete `node_modules` folders (recursively) in your directory.
 
 [package_version_badge]: https://img.shields.io/npm/v/clearout-node-modules.svg
 [package_link]: https://www.npmjs.com/package/clearout-node-modules
-[github_actions_badge]: https://img.shields.io/github/actions/workflow/status/maafaishal/clearout-node-modules/pr.yml
+[github_actions_badge]: https://img.shields.io/github/actions/workflow/status/maafaishal/clearout-node-modules/release.yml
 [github_actions_link]: https://github.com/maafaishal/clearout-node-modules/actions?query=workflow%3ARelease+branch%3Amain
 
 ## CLI
