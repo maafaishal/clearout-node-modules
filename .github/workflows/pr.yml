@@ -1,0 +1,39 @@
+name: PR Checker
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - 'ubuntu-latest'
+        node_version:
+          - '20'
+          - '18'
+          - '16'
+          - '14'
+    name: Node.js ${{ matrix.node_version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+
+      - name: Update NPM
+        run: npm install --global pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        if: matrix.node_version == '20'
+        run: pnpm run lint
+
+      # - name: Run Tests
+        # run: npm run test-coverage

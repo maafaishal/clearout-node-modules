@@ -1,0 +1,44 @@
+{
+  "name": "clear-node-modules",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "dist/index.js",
+  "bin": "./dist/cli.mjs",
+  "scripts": {
+    "build": "tsup-node",
+    "dev": "tsup-node --watch",
+    "lint": "eslint src",
+    "semantic-release": "semantic-release",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "globby": "^14.0.1",
+    "tsup": "^8.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@modern-js/tsconfig": "^2.48.0",
+    "@types/node": "20",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "semantic-release": "^23.0.2",
+    "sort-package-json": "^2.8.0",
+    "typescript": "^5.3.3"
+  },
+  "tsup": {
+    "entry": [
+      "src"
+    ],
+    "format": "esm",
+    "splitting": false,
+    "sourcemap": true,
+    "target": "node18",
+    "clean": true
+  }
+}
