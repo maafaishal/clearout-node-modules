@@ -27,7 +27,7 @@ Find and delete node_modules folders (recursively) in your directory.
   );
 }
 
-async function run() {
+async function cli() {
   const cliArguments = process.argv.slice(2);
   const options = parseOptions(cliArguments);
 
@@ -42,4 +42,4 @@ async function run() {
   await cleanupNodeModules(options.path, { isRecursive: options.recursive });
 }
 
-run();
+cli();
