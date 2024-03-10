@@ -26,4 +26,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: CI=true npx semantic-release --branches=main --debug
+        run: npx semantic-release --branches=main --debug
