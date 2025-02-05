@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/maafaishal/clearout-node-modules/compare/v1.0.3...v1.0.4) (2025-02-05)
+
+
+### Bug Fixes
+
+* doc ([d136028](https://github.com/maafaishal/clearout-node-modules/commit/d1360285e543036bee91037f566b13560c638d5c))
+
 ## [1.0.3](https://github.com/maafaishal/clearout-node-modules/compare/v1.0.2...v1.0.3) (2024-03-10)
 
 
