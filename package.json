@@ -4,6 +4,14 @@
   "description": "",
   "license": "ISC",
   "author": "",
+  "homepage": "https://github.com/maafaishal/clearout-node-modules#readme",
+  "bugs": {
+    "url": "https://github.com/maafaishal/clearout-node-modules/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maafaishal/clearout-node-modules.git"
+  },
   "main": "dist/index.mjs",
   "bin": "./dist/cli.mjs",
   "scripts": {
