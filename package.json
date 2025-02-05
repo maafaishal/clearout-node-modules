@@ -53,5 +53,8 @@
     "sourcemap": true,
     "target": "node18",
     "clean": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
